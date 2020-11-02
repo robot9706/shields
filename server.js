@@ -48,7 +48,7 @@ if (fs.existsSync(legacySecretsPath)) {
 const Server = require('./core/server/server')
 const server = (module.exports = new Server(config))
 
-;(async () => {
+(async () => {
   try {
     await server.start()
   } catch (e) {
